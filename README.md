@@ -1,5 +1,5 @@
 # D-FLIPDLOP-NEGEDGE
-
+**DATE : 05/12/2025**
 **AIM:**
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
@@ -32,13 +32,689 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+D Flip-Flop (with async reset)
+------------------------------
+
+```
+module d_ff (
+    input  wire clk, rst, D,
+    output reg  Q
+);
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            Q <= 1'b0;   // Reset
+        else
+            Q <= D;      // Capture D at clock edge
+    end
+endmodule
+```
+
+
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: SHREEJA R S
+RegisterNumber: 25017561
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+<img width="1087" height="693" alt="Screenshot 2025-12-05 150108" src="https://github.com/user-attachments/assets/081368d7-86d5-4eb2-86e1-975c155db7ae" />
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+<img width="359" height="177" alt="Screenshot 2025-12-05 150043" src="https://github.com/user-attachments/assets/549b7916-f9da-4897-9e0c-5f4e199baf17" />
+
 
 **RESULTS**
+ Thus the 4 Bit Ripple Counter using verilog and validating their functionality using their functional tables is verified.
+
+
+
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ ..
+ .
+ .
+ .
+
+
+ ..
+ .
+
+ .
+ .
+
+ .
+ .
+
+ .
+ .
+ .
+ .
+ .
+ .
+ .
+ .
